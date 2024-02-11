@@ -4,10 +4,10 @@ com\hendrik\dermtest\controllers\MainController.class
 com\hendrik\dermtest\JpaConfig.class
 com\hendrik\dermtest\models\Doctor.class
 com\hendrik\dermtest\services\DoctorsService.class
-com\hendrik\dermtest\SecurityConfig.class
 com\hendrik\dermtest\controllers\DoctorsRestController.class
 com\hendrik\dermtest\controllers\UpdateDoctorController.class
 com\hendrik\dermtest\services\DoctorsServiceInterface.class
+com\hendrik\dermtest\models\Doctor$DoctorBuilder.class
 com\hendrik\dermtest\data\DoctorsDataInterface.class
 com\hendrik\dermtest\SpringConfig.class
 com\hendrik\dermtest\controllers\DoctorTableController.class
