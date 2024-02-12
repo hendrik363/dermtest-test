@@ -11,9 +11,43 @@
 ### Run
 java -jar ./target/dermtest.jar
 
-I created a Spring boot 2.7.18 API application. This spring boot application backend consists of 3 levels. First Level is the controller level, second is the service level, and the third and final level is the JPA repository level. 
-The Api URL path is: localhost:8080/api/v1/doctors. 
-I also added some forntend for the api. The fronend is html5 with thymeleaf and consists of a homepage, doctor adding form, table of doctors(with crud capabilities). The homepage consists of buttons, that link to the possible usecases for the api.
+### Link to API
+localhost:8080/api/v1/doctors
+
+### API Calls
+
+1. GetDoctors
+- GET request to URL localhost:8080/api/v1/doctors
+2. SearchDoctors
+- GET request to URL localhost:8080/api/v1/doctors/search/{searchTerm}
+3. AddDoctor
+- POST request to URL localhost:8080/api/v1/doctors with doctor json body. Example json body: {
+    "doctorName": "",
+    "birthDate": "",
+    "specialization": "",
+    "email": "",
+    "phoneNumber": ""
+} 
+4. GetById
+- GET request to URL localhost:8080/api/v1/doctors/{id}
+5. DeleteDoctor
+- POST request to URL localhost:8080/api/v1/doctors/delete/{id}
+6. UpdateDoctor
+- PUT request to URL localhost:8080/api/v1/doctors/update/{id} with json body of updated doctor. Example json body: {
+    "doctorName": "",
+    "birthDate": "",
+    "specialization": "",
+    "email": "",
+    "phoneNumber": ""
+}
+
+I created a Spring boot 2.7.18 API application. This spring boot application backend consists of 3 levels. First Level is the controller level, second is the service level, and the third and final level is the JPA repository level.
+I also added some forntend for the api. The fronend is html5 with thymeleaf and consists of a homepage, doctor adding form, table of doctors(with crud capabilities). The homepage consists of buttons for the possible usecases for the application:
+1. Form for adding new doctors.
+2. OpenApi documentation link
+3. Table of doctors, with crud possibilities.
+4. H2 database link
+5. Project github link.
 
 ## Completed Tasks:
 
@@ -29,6 +63,10 @@ I also added some forntend for the api. The fronend is html5 with thymeleaf and 
 1. Create data model (i.e doctor or nurse): I created a data model for doctors.
 2. Create one of CRUD based controller with input/output JSON (i.e use your created data model): I created a RestController with CRUD possibilities, that controls all calls to the API.
 3. Create one JPA repository for connecting to database: I created a JPA repository that connects to my h2 file-based database.
+
+The result application has a working api with a frontend to help navigate the program. The project took 20h to complete.
+
+
  
 
 
